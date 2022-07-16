@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
-mongoose.connect("mongodb+srv://Ayush:ayushishere@cluster0.fohsg.mongodb.net/PortfolioDatabase", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://Ayush:<password>@cluster0.fohsg.mongodb.net/<Database>", {useNewUrlParser: true});
 const Contact = {
 
     Name: String, 
